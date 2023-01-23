@@ -13,8 +13,8 @@ module.exports = {
         'grey-dark': '#0A0E12',
       },
       fontFamily: {
-        'heading': ['"Rival Sans"', 'sans-serif'],
-        'body': ['"Proxima Nova"', 'sans-serif'],
+        'heading': ["Work Sans", 'sans-serif'],
+        'body': ['Proxima Nova', 'sans-serif'],
       }
     },
   },
