@@ -1,4 +1,5 @@
-import Head from "next/head";
+import { Header } from './components/header';
+import { CustomHead } from './components/head';
 
 type Props = {
   children: JSX.Element;
@@ -7,13 +8,13 @@ type Props = {
 export const Layout = ({ children }: Props) => {
   return (
     <>
-      <Head>
-        <title>Nick Hernandez | Web Developer</title>
-      </Head>
+      <CustomHead />
+      <Header />
       <main>
-        <div className="gradient-1"></div>
-        <div className="gradient-2"></div>
+        {children}
       </main>
+      <div className="gradient-1"></div>
+      <div className="gradient-2"></div>
       <div className="gradient-3"></div>
     </>
   )
