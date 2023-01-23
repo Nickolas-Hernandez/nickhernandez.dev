@@ -10,7 +10,7 @@ module.exports = {
         'secondary': '#2E49C6',
         'neutral': '#8E98AA',
         'neutral-dark': '#19202A',
-        'dark': '#0A0E12',
+        'grey-dark': '#0A0E12',
       },
       fontFamily: {
         'heading': ['"Rival Sans"', 'sans-serif'],
