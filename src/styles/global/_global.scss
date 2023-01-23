@@ -1,3 +1,17 @@
 .contain {
   @apply container mx-auto px-4;
 }
+
+button {
+  @apply bg-secondary font-medium text-white py-3 px-6 rounded;
+
+  &.style-2 {
+    @apply bg-transparent;
+
+    &::after {
+      @apply ml-2;
+
+      content: url('/downArrow.svg');
+    }
+  }
+}
