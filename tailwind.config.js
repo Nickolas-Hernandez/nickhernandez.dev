@@ -13,7 +13,7 @@ module.exports = {
         'dark': '#0A0E12',
       },
       fontFamily: {
-        'Heading': ['"Rival Sans"', 'sans-serif'],
+        'heading': ['"Rival Sans"', 'sans-serif'],
         'body': ['"Proxima Nova"', 'sans-serif'],
       }
     },
