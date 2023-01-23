@@ -1,11 +1,9 @@
-import Head from 'next/head'
+import { Layout } from '@/components/layout';
 
 export default function Home() {
   return (
-    <>
-      <div className="contain">
-        <p>contained</p>
-      </div>
-    </>
+    <Layout>
+      <p>hello</p>
+    </Layout>
   )
 }

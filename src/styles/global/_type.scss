@@ -1,5 +1,7 @@
 body {
   @apply bg-primary font-body text-lg text-white;
+
+  overflow-x: hidden;
 }
 
 h1,
