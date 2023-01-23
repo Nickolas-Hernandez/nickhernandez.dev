@@ -1,3 +1,74 @@
 header {
-  @apply pt-8;
+  @apply pt-8 relative;
+
+  .contain {
+    @apply flex lg:justify-center items-center;
+
+    .logoImage {
+      @apply absolute top-6 left-1/2 z-50 lg:static lg:mr-auto;
+
+      transform: translateX(-50%);
+
+      @media screen and (min-width: 1024px) {
+        transform: none;
+      }
+    }
+
+    nav {
+      @apply w-full h-screen bg-primary absolute top-0 -right-full flex flex-col text-center pb-28 pt-16 lg:static lg:bg-transparent lg:h-auto lg:w-auto lg:flex-row lg:py-0;
+
+      @media screen and (max-width: 1023px) {
+        transition: right .2s ease;
+
+        &.open {
+          @apply right-0;
+        }
+      }
+
+      ul {
+        @apply h-full flex flex-col justify-evenly lg:flex-row;
+
+        li {
+          @apply lg:mx-10;
+        }
+      }
+    }
+
+    a {
+      @apply lg:ml-auto;
+    }
+
+    .menu-button {
+      @apply w-8 h-7 p-1 flex flex-col justify-between lg:hidden absolute right-4;
+
+      transform: translateY(50%);
+
+      .line {
+        @apply border-2 border-solid rounded block;
+
+        background-color: white;
+
+        width: 100%;
+      }
+
+      .line-top,
+      .line-bottom {
+        transition: transform 0.3s linear;
+      }
+
+      &.open {
+        .line-top {
+          transform: translateY(200%) rotate(45deg);
+        }
+
+        .line-center {
+          @apply hidden;
+        }
+
+        .line-bottom {
+          transform: translateY(-200%) rotate(-45deg);
+        }
+      }
+    }
+  }
 }
