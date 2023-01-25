@@ -3,5 +3,9 @@
     @apply flex items-center justify-start;
 
     height: 900px;
+
+    p {
+      @apply mb-7;
+    }
   }
 }
