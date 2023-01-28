@@ -13,7 +13,7 @@ module.exports = {
         'grey-dark': '#0A0E12',
       },
       fontFamily: {
-        'heading': ["Work Sans", 'sans-serif'],
+        'heading': ["Proxima Nova", 'sans-serif'],
         'body': ['Proxima Nova', 'sans-serif'],
       }
     },

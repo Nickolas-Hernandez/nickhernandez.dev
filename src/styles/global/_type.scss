@@ -1,5 +1,5 @@
 body {
-  @apply bg-primary font-body text-lg text-white;
+  @apply bg-primary font-body text-white text-base lg:text-lg;
 
   overflow-x: hidden;
 }
@@ -16,7 +16,7 @@ h6 {
 h1,
 h2,
 h3 {
-  @apply font-semibold mb-3;
+  @apply font-semibold font-heading mb-3;
 }
 
 h4,
