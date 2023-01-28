@@ -15,10 +15,21 @@ export const AboutMeSection = () => {
         </div>
         <div className="wrapper">
           <div className="education">
-            <strong className="opacity-75 mb-5">Education</strong>
+            <strong className="text-sm opacity-75 mb-5">Education</strong>
+            <div className="education-item">
+              <div>
+                <p className="font-medium">Web Development Program</p>
+                <p >LearningFuze</p>
+              </div>
+              <div>
+                <p className="font-medium opacity-75">Graduated April 2021</p>
+                <p className="opacity-75">4 months</p>
+              </div>
+            </div>
           </div>
           <div className="work-experience">
             <strong className="opacity-75 mb-5">Work Experience</strong>
+
           </div>
         </div>
       </div>
