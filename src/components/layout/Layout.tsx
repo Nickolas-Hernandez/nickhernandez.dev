@@ -2,7 +2,7 @@ import { Header } from './components/header';
 import { CustomHead } from './components/head';
 
 type Props = {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 export const Layout = ({ children }: Props) => {
