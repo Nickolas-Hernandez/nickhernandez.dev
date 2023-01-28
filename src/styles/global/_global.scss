@@ -1,0 +1,65 @@
+.contain {
+  @apply container mx-auto px-3.5 lg:px-0;
+}
+
+button {
+  @apply bg-secondary font-medium text-white py-3 px-6 rounded;
+
+  transition:  transform 0.2s ease;
+
+  &.style-2 {
+    @apply bg-transparent;
+
+    &::after {
+      @apply ml-2;
+
+      content: url('/downArrow.svg');
+    }
+  }
+
+  &.style-3 {
+    @apply bg-black;
+
+    &:hover {
+      @apply scale-105;
+    }
+  }
+}
+
+.gradient-1,
+.gradient-2,
+.gradient-3 {
+  @apply fixed;
+
+  z-index: -1;
+}
+
+.gradient-1 {
+  width: 1420px;
+  height: 1028px;
+  left: 820px;
+  top: -330px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(75, 149, 241, 0.75) 0%, rgba(75, 149, 241, 0.35) 43.45%, rgba(34, 87, 152, 0) 100%);
+  filter: blur(100px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  position: absolute;
+}
+
+.gradient-2 {
+  width: 70%;
+  height: 100%;
+  left: 20%;
+  top: 20%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(69, 100, 240, 0.2625) 0%, rgba(69, 100, 240, 0.1225) 43.45%, rgba(36, 45, 86, 0) 100%);
+  filter: blur(100px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.gradient-3 {
+  width: 90%;
+  height: 432px;
+  bottom: -32%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(69, 100, 240, 0.2625) 0%, rgba(69, 100, 240, 0.1225) 43.45%, rgba(36, 45, 86, 0) 100%);
+  filter: blur(100px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}

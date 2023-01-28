@@ -1,12 +1,10 @@
-import Head from 'next/head'
+import { Layout } from '@/components/layout';
+import { IntroSection } from '@/components/introSection';
 
 export default function Home() {
   return (
-    <>
-    <Head>
-      <link rel="stylesheet" href="https://use.typekit.net/igb1fgp.css"></link>
-    </Head>
-      <h1 className="">Nickhernandez.dev</h1>
-    </>
+    <Layout>
+      <IntroSection />
+    </Layout>
   )
 }

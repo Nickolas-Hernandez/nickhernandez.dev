@@ -1,0 +1,11 @@
+.intro-section {
+  .contain {
+    @apply flex items-center justify-start;
+
+    height: 800px;
+
+    p {
+      @apply mb-7;
+    }
+  }
+}
