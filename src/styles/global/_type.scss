@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   @apply bg-primary font-body text-white text-base lg:text-lg;
 

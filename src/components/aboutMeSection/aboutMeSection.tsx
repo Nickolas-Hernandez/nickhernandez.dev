@@ -4,10 +4,10 @@ export const AboutMeSection = () => {
   const { years, months } = calculateMonthsBetweenDates(new Date(2021, 8), new Date());
 
   return (
-    <section className="about-me-section">
+    <section id="about-me" className="about-me-section">
       <div className="contain">
         <div className="biography">
-          <strong className="opacity-75 mb-5 text-sm lg:text-base">About Me</strong>
+          <strong className="opacity-70 mb-5 text-sm lg:text-base">About Me</strong>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             animi quae itaque magni eum ab? Aliquid esse quos impedit
