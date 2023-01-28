@@ -3,5 +3,17 @@
     strong {
       @apply uppercase font-medium block;
     }
+
+    .biography {
+      @apply pb-10;
+    }
+
+    .education {
+      @apply pb-10;
+
+      .education-item {
+        @apply w-full flex justify-between border-b border-solid border-neutral pb-5 border-opacity-20;
+      }
+    }
   }
 }

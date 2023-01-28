@@ -21,7 +21,7 @@ export const AboutMeSection = () => {
                 <p className="font-medium">Web Development Program</p>
                 <p >LearningFuze</p>
               </div>
-              <div>
+              <div className="text-right">
                 <p className="font-medium opacity-75">Graduated April 2021</p>
                 <p className="opacity-75">4 months</p>
               </div>
