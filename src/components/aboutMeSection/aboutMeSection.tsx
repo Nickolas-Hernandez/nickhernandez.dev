@@ -28,8 +28,17 @@ export const AboutMeSection = () => {
             </div>
           </div>
           <div className="work-experience">
-            <strong className="opacity-75 mb-5">Work Experience</strong>
-
+            <strong className="text-sm opacity-75 mb-5">Work Experience</strong>
+            <div className="work-experience-item">
+              <div className="">
+                <p className="font-medium">Web Developer</p>
+                <p className="opacity-75">Big Rig Media</p>
+              </div>
+              <div className="text-right">
+                <p className="font-medium opacity-75">Aug 2021 - Present</p>
+                <p className="opacity-75">{''}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
