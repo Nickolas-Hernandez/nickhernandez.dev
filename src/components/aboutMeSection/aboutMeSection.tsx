@@ -1,4 +1,8 @@
+import { calculateMonthsBetweenDates } from '@/utils/dateCalc';
+
 export const AboutMeSection = () => {
+  const { years, months } = calculateMonthsBetweenDates(new Date(2021, 8), new Date());
+
   return (
     <section className="about-me-section">
       <div className="contain">
@@ -36,7 +40,7 @@ export const AboutMeSection = () => {
               </div>
               <div className="text-right">
                 <p className="font-medium opacity-75">Aug 2021 - Present</p>
-                <p className="opacity-75">{''}</p>
+                <p className="opacity-75">{`${years} yr ${months} mos`}</p>
               </div>
             </div>
           </div>
