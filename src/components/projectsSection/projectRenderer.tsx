@@ -14,8 +14,8 @@ export const RenderedProjects = (projects: project[ ]) => {
 
 const Project = ({ project }: { project: project }, key : number) => {
   return (
-    <div className="project">
-      <div className="image-wrapper bg-grey-dark">
+    <div className="project bg-grey-dark ">
+      <div className="image-wrapper max-w-max">
         <Image src={project.image} alt={`${project.title} Logo`} width={859} height={560}/>
       </div>
       <div className="content-wrapper">
