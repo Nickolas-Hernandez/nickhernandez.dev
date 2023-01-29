@@ -1,5 +1,11 @@
 .contain {
-  @apply container mx-auto px-3.5 lg:px-0;
+  @apply container mx-auto px-3.5 lg:px-6;
+
+  max-width: 1328px;
+
+  @media screen and ( min-width: 1400px ) {
+    @apply px-0;
+  }
 }
 
 button {
