@@ -5,7 +5,7 @@ export const ProjectsSection = () => {
   const projects = ProjectsRenderer(projectData);
 
   return (
-    <section id="projects">
+    <section id="projects" className="projects-section">
       <div className="contain">
         { [...projects]}
       </div>

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { project } from '@/interfaces/project';
 import { iconsData } from '@/data/icons';
 import github from 'public/github.svg'
+import openLink from 'public/openLink.svg'
 
 export const ProjectsRenderer = (projects: project[ ]) => {
   const Projects = projects.map((project, i: number) => {
@@ -24,14 +25,16 @@ const Project = ({ project }: { project: project }, key: number) => {
       <div className="content-wrapper">
         { key === 0 ? <strong>Featured Project</strong> : null }
         <h3>{project.title}</h3>
-        <div className="icon-wrapper">
+        <div className="icons-wrapper">
           { ...Icons }
         </div>
         <p>{project.description}</p>
       </div>
       <div className="link-wrapper">
         <Link href={ project.live } target="_blank">
-          <button className='style-project'>Visit Site</button>
+          <button className='style-project'>
+            <Image className='mr-2' src={ openLink } alt="Visit project site" width={18} height={18} /> Visit Site
+          </button>
         </Link>
         <Link href={ project.github } target="_blank">
           <Image src={github} alt="Link to Github Repository" width={30} height={30} />

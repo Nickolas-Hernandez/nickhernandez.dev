@@ -1,0 +1,41 @@
+.projects-section {
+  .contain {
+    .project {
+      @apply rounded-lg p-2.5 mb-10 flex flex-col justify-start;
+
+      height: 540px;
+
+      .image-wrapper {
+        @apply mb-5;
+
+        img{
+          border-radius: 5px;
+        }
+      }
+
+      .content-wrapper {
+        @apply px-2.5;
+
+        .icons-wrapper {
+          @apply flex justify-start items-center mb-2.5;
+
+          .tech-icon {
+            @apply mr-2.5;
+
+            &:last-child {
+              @apply mr-0;
+            }
+          }
+        }
+      }
+
+      .link-wrapper {
+        @apply w-full flex justify-between items-end mt-auto px-2.5 pb-2.5;
+      }
+    }
+
+    button.style-project {
+      @apply bg-opacity-0 border-2 border-neutral-dark flex items-center;
+    }
+  }
+}
