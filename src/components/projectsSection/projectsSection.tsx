@@ -1,8 +1,13 @@
+import { RenderedProjects } from "@/components/projectsSection/projectRenderer";
+import { projectData } from "@/data/projects";
+
 export const ProjectsSection = () => {
+  const projects = RenderedProjects(projectData);
+
   return (
     <section id="projects">
       <div className="contain">
-        <h1>projects</h1>
+        { [...projects]}
       </div>
     </section>
   )

@@ -1,17 +1,13 @@
-export interface Project {
-  title: string,
-  description: string,
-  image: string,
-  tags: string[ ],
-  live: string,
-  github: string,
-};
+import { project } from '@/interfaces/project';
+import appChat from 'public/appChatLogo.jpg';
+import spader from 'public/spaderLogo.png';
+import stockWatch from 'public/stockWatchlogo.png';
 
-export const projects: Project[ ] = [
+export const projectData: project[ ] = [
   {
     title: 'App Chat',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae.',
-    image: '/public/appChat.png',
+    image: appChat,
     tags: ['React', 'CSS3', 'Node.js', 'Express', 'PostgreSQL'],
     live: '#',
     github: '#',
@@ -19,7 +15,7 @@ export const projects: Project[ ] = [
   {
     title: 'Spader Investigations',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae.',
-    image: '/public/appChat.png',
+    image: spader,
     tags: ['HTML5', 'SASS', 'JavaScript'],
     live: '#',
     github: '#',
@@ -27,7 +23,7 @@ export const projects: Project[ ] = [
   {
     title: 'Stock Watch',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae.',
-    image: '/public/appChat.png',
+    image: stockWatch,
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     live: '#',
     github: '#',
@@ -35,7 +31,7 @@ export const projects: Project[ ] = [
   {
     title: 'Example App',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae.',
-    image: '/public/appChat.png',
+    image: appChat,
     tags: ['TypeScript', 'Next.js', 'SASS' ],
     live: '#',
     github: '#',
