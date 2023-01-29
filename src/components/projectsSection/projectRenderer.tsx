@@ -15,7 +15,6 @@ export const ProjectsRenderer = (projects: project[ ]) => {
 
 const Project = ({ project }: { project: project }, key: number) => {
   const Icons = IconRenderer(project.tags);
-  console.log('icons', Icons);
 
   return (
     <div className="project bg-grey-dark ">
@@ -43,7 +42,6 @@ const Project = ({ project }: { project: project }, key: number) => {
 }
 
 const IconRenderer = ( tags: string[ ]) => {
-  console.log('icons 2', tags);
   const Icons = tags.map((tag, i: number) => {
     return <Icon key={i} tag={tag}/>;
   });
