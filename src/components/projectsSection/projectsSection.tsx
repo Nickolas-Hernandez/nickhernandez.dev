@@ -1,8 +1,8 @@
-import { RenderedProjects } from "@/components/projectsSection/projectRenderer";
+import { ProjectsRenderer } from "@/components/projectsSection/projectRenderer";
 import { projectData } from "@/data/projects";
 
 export const ProjectsSection = () => {
-  const projects = RenderedProjects(projectData);
+  const projects = ProjectsRenderer(projectData);
 
   return (
     <section id="projects">

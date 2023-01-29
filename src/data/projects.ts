@@ -8,7 +8,7 @@ export const projectData: project[ ] = [
     title: 'App Chat',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae.',
     image: appChat,
-    tags: ['React', 'CSS3', 'Node.js', 'Express', 'PostgreSQL'],
+    tags: ['JavaScript', 'WordPress', 'Python', 'PHP', 'PostgreSQL'],
     live: '#',
     github: '#',
   },
