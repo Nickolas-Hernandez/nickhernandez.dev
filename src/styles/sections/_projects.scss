@@ -1,9 +1,12 @@
 .projects-section {
   .contain {
+    @apply flex flex-wrap justify-center;
+
     .project {
-      @apply rounded-lg p-2.5 mb-10 flex flex-col justify-start;
+      @apply rounded-lg p-2.5 mb-10 flex flex-col justify-start mx-1.5;
 
       height: 540px;
+      max-width: 430px;
 
       .image-wrapper {
         @apply mb-5;

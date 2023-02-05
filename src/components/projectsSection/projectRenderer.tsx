@@ -8,13 +8,13 @@ import openLink from 'public/openLink.svg'
 export const ProjectsRenderer = (projects: project[ ]) => {
   const Projects = projects.map((project, i: number) => {
     return (
-      <Project key={i} project={project} />
+      <Project key={i} project={project} featured={ i === 0 ? true : false} />
     );
   });
   return Projects;
 };
 
-const Project = ({ project }: { project: project }, key: number) => {
+const Project = ({ project, featured }: { project: project, featured: boolean } ) => {
   const Icons = IconRenderer(project.tags);
 
   return (
@@ -23,7 +23,7 @@ const Project = ({ project }: { project: project }, key: number) => {
         <Image src={project.image} alt={`${project.title} Logo`} width={859} height={560}/>
       </div>
       <div className="content-wrapper">
-        { key === 0 ? <strong>Featured Project</strong> : null }
+        { featured ? <strong className='text-neutral'>Featured Project</strong> : null}
         <h3>{project.title}</h3>
         <div className="icons-wrapper">
           { ...Icons }
@@ -41,8 +41,8 @@ const Project = ({ project }: { project: project }, key: number) => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const IconRenderer = ( tags: string[ ]) => {
   const Icons = tags.map((tag, i: number) => {
