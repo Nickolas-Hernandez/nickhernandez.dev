@@ -1,6 +1,6 @@
 .projects-section {
   .contain {
-    @apply flex flex-wrap justify-center;
+    @apply flex flex-wrap justify-center md:justify-between;
 
     .project {
       @apply rounded-lg p-2.5 mb-10 flex flex-col justify-start mx-1.5;
@@ -16,24 +16,69 @@
         }
       }
 
-      .content-wrapper {
-        @apply px-2.5;
+      @media screen and (min-width: 768px) {
+        width: 48%;
+      }
 
-        .icons-wrapper {
-          @apply flex justify-start items-center mb-2.5;
+      @media screen and (min-width: 1024px) {
+        width: 32%;
+      }
 
-          .tech-icon {
-            @apply mr-2.5;
+      .wrapper {
+        @apply flex flex-col justify-between h-full pl-2.5;
 
-            &:last-child {
-              @apply mr-0;
+        .content-wrapper {
+          @apply px-2.5;
+
+          .icons-wrapper {
+            @apply flex justify-start items-center mb-2.5;
+
+            .tech-icon {
+              @apply mr-2.5;
+
+              &:last-child {
+                @apply mr-0;
+              }
             }
           }
         }
+
+        .link-wrapper {
+          @apply w-full flex justify-between items-end mt-auto px-2.5 pb-2.5;
+        }
       }
 
-      .link-wrapper {
-        @apply w-full flex justify-between items-end mt-auto px-2.5 pb-2.5;
+      &.featured {
+        @media screen and (min-width: 768px) {
+          @apply w-full h-min flex-row;
+
+          max-width: 100%;
+
+          .image-wrapper {
+            @apply mb-0;
+
+            img {
+              border-radius: 8px;
+            }
+          }
+
+          .wrapper {
+            @apply flex-row flex-wrap;
+
+            height: initial;
+            max-width: 40%;
+
+            .link-wrapper {
+              @apply mt-auto;
+            }
+          }
+        }
+
+        @media screen and (min-width: 1024px) {
+          .image-wrapper {
+            width: 65%;
+          }
+        }
       }
     }
 
