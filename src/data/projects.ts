@@ -31,7 +31,7 @@ export const projectData: project[ ] = [
   {
     title: 'Example App',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae.',
-    image: appChat,
+    image: spader,
     tags: ['TypeScript', 'Next.js', 'SASS' ],
     live: '#',
     github: '#',
