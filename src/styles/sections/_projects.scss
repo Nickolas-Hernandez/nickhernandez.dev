@@ -3,7 +3,7 @@
     @apply flex flex-wrap justify-center md:justify-between;
 
     .project {
-      @apply rounded-lg p-2.5 mb-10 flex flex-col justify-start mx-1.5;
+      @apply rounded-lg p-2.5 mb-10 flex flex-col justify-start mx-1.5 md:mx-0;
 
       height: 540px;
       max-width: 430px;
@@ -29,6 +29,10 @@
 
         .content-wrapper {
           @apply px-2.5;
+
+          h3 {
+            @apply text-2xl;
+          }
 
           .icons-wrapper {
             @apply flex justify-start items-center mb-2.5;
