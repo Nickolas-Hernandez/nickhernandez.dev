@@ -32,7 +32,7 @@ export const projectData: project[ ] = [
     title: 'Example App',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae.',
     image: spader,
-    tags: ['TypeScript', 'Next.js', 'SASS' ],
+    tags: ['TypeScript', 'Next.js', 'SASS', 'CSS', 'React', 'Tailwind' ],
     live: '#',
     github: '#',
   },

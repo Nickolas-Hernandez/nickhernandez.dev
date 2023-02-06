@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { project } from '@/interfaces/project';
 import { iconsData } from '@/data/icons';
-import github from 'public/github.svg'
-import openLink from 'public/openLink.svg'
+import github from 'public/github.svg';
+import openLink from 'public/openLink.svg';
 
 export const ProjectsRenderer = (projects: project[ ]) => {
   const Projects = projects.map((project, i: number) => {
@@ -77,6 +77,42 @@ const Icon = ( { tag }: {tag: string} ) => {
       return (
         <div className="tech-icon">
           <Image src={iconsData.wordpress.icon} alt="WordPress Icon" width={20} height={20} />
+        </div>
+      );
+    case 'React':
+      return (
+        <div className="tech-icon">
+          <Image src={iconsData.react.icon} alt="React.js Icon" width={20} height={20} />
+        </div>
+      );
+    case 'Next.js':
+      return (
+        <div className="tech-icon">
+          <Image src={iconsData.nextjs.icon} alt="Next.js Icon" width={20} height={20} />
+        </div>
+      );
+    case 'TypeScript':
+      return (
+        <div className="tech-icon">
+          <Image src={iconsData.typescript.icon} alt="TypeScript Icon" width={20} height={20} />
+        </div>
+      );
+    case 'Tailwind':
+      return (
+        <div className="tech-icon">
+          <Image src={iconsData.tailwind.icon} alt="Tailwind Icon" width={20} height={20} />
+        </div>
+      );
+    case 'Sass':
+      return (
+        <div className="tech-icon">
+          <Image src={iconsData.sass.icon} alt="Sass Icon" width={20} height={20} />
+        </div>
+      );
+    case 'CSS':
+      return (
+        <div className="tech-icon">
+          <Image src={iconsData.css.icon} alt="CSS Icon" width={20} height={20} />
         </div>
       );
     default:
