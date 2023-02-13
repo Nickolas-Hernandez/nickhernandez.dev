@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { ClonerCube } from "../clonerCube";
 
 export const IntroSection = () => {
   return (
-    <section className="intro-section">
+    <section className="intro-section relative">
       <div className="contain">
         <div className="wrapper">
           <p className="text-xl opacity-75">Hi, my name is</p>
@@ -13,6 +14,10 @@ export const IntroSection = () => {
           <Link href="#about-me"><button className="style-2">About Me</button></Link>
         </div>
       </div>
+      <div className="cube-container max-w-max absolute right-0 top-0">
+        <ClonerCube />
+      </div>
     </section>
+
   );
 };
