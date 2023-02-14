@@ -1,11 +1,22 @@
 .intro-section {
   .contain {
-    @apply flex items-center justify-start;
+    @apply flex items-center justify-start flex-wrap pt-40 pb-40;
 
-    height: 900px;
+    min-height: 900px;
 
     p {
       @apply mb-7;
+    }
+
+    .cube-container {
+      @apply w-full mt-16 lg:mt-0 mx-auto relative;
+
+      height: 512px;
+      max-width: 512px;
+
+      .overlay {
+        @apply absolute top-0 left-0 right-0 bottom-0 bg-transparent;
+      }
     }
   }
 }
