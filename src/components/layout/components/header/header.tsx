@@ -16,7 +16,7 @@ export const Header = () => {
         <Image className="logoImage" src={logo} alt="Nick Hernandez Logo" />
         <nav className={menuStatus ? 'open' : ''}>
           <ul className="main-nav">
-            <li><Link href="#about">About</Link></li>
+            <li><Link href="#about-me">About</Link></li>
             <li><Link href="#projects">Projects</Link></li>
             <li><Link href="https://github.com/Nickolas-Hernandez" target="_blank">GitHub</Link></li>
           </ul>
