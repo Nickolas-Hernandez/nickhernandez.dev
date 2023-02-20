@@ -8,13 +8,32 @@ export const AboutMeSection = () => {
       <div className="contain">
         <div className="biography">
           <strong className="opacity-70 mb-5 text-sm lg:text-base">About Me</strong>
+          <p className="mb-4">
+            After being inspired by the first SpaceX booster landing, I discovered my passion
+            for technology and made the decision to pursue a career in the tech field in 2020. I
+            delved into the subject of online business, web design, copywriting,
+            marketing, and e-commerce, until I fell in love with the world of programming. I
+            then took the leap and joined a coding bootcamp, where I learned the fundamentals
+            of web development.
+          </p>
+          <p className="mb-4">
+            Today, I am proud to hold the position of Web Developer at Big Rig Media, where I work
+            with a variety of technologies on a regular basis. These include:
+          </p>
+          <ul className="mb-4 pl-8">
+            <li>JavaScript (ES6+)</li>
+            <li>Typescript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>WordPress</li>
+            <li>Figma</li>
+            <li>Spline</li>
+          </ul>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            animi quae itaque magni eum ab? Aliquid esse quos impedit
-            incidunt? Non pariatur explicabo, tenetur numquam cum deleniti?
-            Impedit optio in non adipisci ut cumque voluptate libero facilis
-            quod quae temporibus natus et harum consequuntur officia maxime
-            aut, sit fugiat eius.
+            In my personal time, I continue to immerse myself in reading and programming to stay
+            up-to-date with the latest advancements in the field.
           </p>
         </div>
         <div className="wrapper">
