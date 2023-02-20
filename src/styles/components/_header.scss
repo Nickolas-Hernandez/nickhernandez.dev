@@ -15,7 +15,9 @@ header {
     }
 
     nav {
-      @apply w-full h-screen bg-primary absolute top-0 -right-full flex flex-col text-center pb-28 pt-16 lg:static lg:bg-transparent lg:h-auto lg:w-auto lg:flex-row lg:py-0;
+      @apply w-full bg-primary absolute top-0 bottom-0 -right-full flex flex-col text-center pb-28 pt-16 lg:static lg:bg-transparent lg:h-auto lg:w-auto lg:flex-row lg:py-0;
+
+      height: calc(100vh + 4rem);
 
       @media screen and (max-width: 1023px) {
         @apply z-30;
