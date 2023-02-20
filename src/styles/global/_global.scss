@@ -30,6 +30,10 @@ button {
       @apply scale-105;
     }
   }
+
+  &:hover {
+    @apply scale-105;
+  }
 }
 
 .gradient-1,
