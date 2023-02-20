@@ -3,10 +3,10 @@ footer {
     @apply flex flex-col md:flex-row justify-center md:justify-between items-center;
 
     .wrapper {
-      @apply md:flex md:items-center md:justify-center;
+      @apply flex flex-col md:flex-row md:items-center justify-center md:justify-start;
 
       a {
-        @apply text-sm;
+        @apply text-sm md:text-center;
       }
     }
 
