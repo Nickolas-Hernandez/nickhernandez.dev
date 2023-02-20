@@ -1,0 +1,17 @@
+footer {
+  .contain {
+    @apply flex flex-col md:flex-row justify-center md:justify-between items-center;
+
+    .wrapper {
+      @apply md:flex md:items-center md:justify-center;
+
+      a {
+        @apply text-sm;
+      }
+    }
+
+    .nic {
+      @apply text-sm text-opacity-75;
+    }
+  }
+}
