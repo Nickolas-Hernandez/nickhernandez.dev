@@ -1,6 +1,6 @@
 .intro-section {
   .contain {
-    @apply flex items-center justify-start flex-wrap pt-40 pb-40;
+    @apply flex items-center justify-start flex-wrap pt-40 pb-28 lg:pb-40;
 
     min-height: 900px;
 
