@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { calculateMonthsBetweenDates } from '@/utils/dateCalc';
 
 export const AboutMeSection = () => {
@@ -17,7 +18,7 @@ export const AboutMeSection = () => {
             of web development.
           </p>
           <p className="mb-4">
-            Today, I am proud to hold the position of Web Developer at Big Rig Media, where I work
+            Today, I am proud to hold the position of Web Developer at <Link href="https://www.bigrigmedia.com/" target="_blank" rel='noreferrer'>Big Rig Media</Link>, where I work
             with a variety of technologies on a regular basis. These include:
           </p>
           <ul className="mb-4 pl-8">
@@ -42,10 +43,10 @@ export const AboutMeSection = () => {
             <div className="work-experience-item">
               <div className="">
                 <p className="font-medium">Web Developer</p>
-                <p>Big Rig Media</p>
+                <p><em><Link href="https://www.bigrigmedia.com/" target="_blank" rel='noreferrer'>Big Rig Media</Link></em></p>
               </div>
               <div className="text-right">
-                <p className="font-medium opacity-70">Aug 2021 - Present</p>
+                <p className="font-medium opacity-70"><em>Aug 2021 - Present</em></p>
                 <p className="opacity-70">{`${years} yr ${months} mos`}</p>
               </div>
             </div>
@@ -55,7 +56,7 @@ export const AboutMeSection = () => {
             <div className="education-item">
               <div>
                 <p className="font-medium">Web Development Program</p>
-                <p >LearningFuze</p>
+                <p><em>LearningFuze</em></p>
               </div>
               <div className="text-right">
                 <p className="font-medium opacity-70">Graduated April 2021</p>
