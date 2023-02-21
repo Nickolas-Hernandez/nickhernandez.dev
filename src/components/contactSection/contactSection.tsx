@@ -15,15 +15,15 @@ export const ContactSection = () => {
     <section id="contact" className="contact-section" >
       <div className="contain">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <input type="text" placeholder="First Name" {...register("firstName")} />
+          <input className="half-input" type="text" placeholder="First Name" {...register("firstName")} />
           {errors.firstName && "First name is required"}
-          <input type="text" defaultValue="Last Name" {...register("firstName")} />
+          <input className="half-input" type="text" defaultValue="Last Name" {...register("firstName")} />
           {errors.lastName && "Last name is required"}
           <input type="email" defaultValue="Email Address" {...register("email")} />
           {errors.email && "Email is required"}
           <textarea id="" cols={30} rows={10} {...register("message")}></textarea>
           {errors.message && "Message is required"}
-          <input type="submit" />
+          <button className="w-full" type="submit">Submit</button>
         </form>
       </div>
     </section>
