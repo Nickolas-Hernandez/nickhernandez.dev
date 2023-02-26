@@ -2,8 +2,23 @@
   @apply pt-28 pb-16;
 
   .contain {
+    @apply flex flex-wrap flex-row justify-between;
+
+    .contact-text-wrapper {
+      @apply w-full lg:w-1/2 pr-4 pb-12 text-center lg:text-left;
+
+      h5 {
+        @apply opacity-70;
+
+      }
+
+      p {
+        @apply max-w-xl mx-auto lg:mx-0;
+      }
+    }
+
     form {
-      @apply flex flex-wrap justify-between w-full md:w-2/3 lg:w-1/2 mx-auto;
+      @apply flex flex-wrap justify-between w-full;
 
       input,
       textarea {
