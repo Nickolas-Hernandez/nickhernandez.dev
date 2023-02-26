@@ -22,7 +22,7 @@
 
       input,
       textarea {
-        @apply mb-4 w-full p-2 text-primary rounded;
+        @apply mb-4 w-full p-2 text-primary rounded outline-secondary;
 
         &.half-input {
           @apply w-full;
@@ -34,7 +34,7 @@
       }
 
       textarea {
-        @apply resize-none;
+        @apply h-60 resize-none;
       }
     }
   }
