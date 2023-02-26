@@ -4,7 +4,7 @@ export const ClonerCube = () => {
   return (
       <Spline
         className="cloner-cube"
-        scene="https://prod.spline.design/6lzlaJhN9zKlrA3l/scene.splinecode"
+        scene="https://draft.spline.design/a3-VZRk9JQf8fFdz/scene.splinecode"
       />
   );
 };
