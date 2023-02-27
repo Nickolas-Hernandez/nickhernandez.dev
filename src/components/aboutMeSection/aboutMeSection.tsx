@@ -23,7 +23,7 @@ export const AboutMeSection = () => {
           </p>
           <ul className="mb-4 pl-8">
             <li>JavaScript (ES6+)</li>
-            <li>Typescript</li>
+            <li>TypeScript</li>
             <li>React</li>
             <li>Node.js</li>
             <li>PHP</li>
