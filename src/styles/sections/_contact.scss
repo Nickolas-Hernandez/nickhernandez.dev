@@ -22,9 +22,9 @@
 
       input,
       textarea {
-        @apply mb-4 w-full p-2 text-primary rounded outline-secondary border-l-0;
+        @apply mb-4 w-full p-2 bg-white text-primary rounded outline-secondary border-l-0;
 
-        transition: border-left 0.2s linear;
+        transition: border-left 0.1s linear;
 
         &.half-input {
           @apply w-full;

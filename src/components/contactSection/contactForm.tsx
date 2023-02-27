@@ -1,14 +1,9 @@
 import { useForm, SubmitHandler } from "react-hook-form";
-
-type Inputs = {
-  firstName: string,
-  lastName: string,
-  email: string,
-  message: string,
-};
+import { FormInputs } from "@/interfaces/contactForm";
+import { sendContactForm } from "@/utils/api";
 
 export const ContactForm = () => {
-  const { register, handleSubmit, watch, formState: { errors, isValid } } = useForm<Inputs>({
+  const { register, handleSubmit, watch, formState: { errors, isValid } } = useForm<FormInputs>({
     mode: "onChange",
     defaultValues: {
       firstName: "",
@@ -17,8 +12,8 @@ export const ContactForm = () => {
       message: "",
     }
   });
-  const onSubmit: SubmitHandler<Inputs> = data => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormInputs> = data => {
+    sendContactForm(data);
   };
 
   return(
