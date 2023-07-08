@@ -61,7 +61,7 @@ header {
 
       &.open {
         .line-top {
-          transform: translateY(200%) rotate(45deg);
+          transform: translateY(250%) rotate(45deg);
         }
 
         .line-center {
@@ -69,7 +69,7 @@ header {
         }
 
         .line-bottom {
-          transform: translateY(-200%) rotate(-45deg);
+          transform: translateY(-250%) rotate(-45deg);
         }
       }
     }
