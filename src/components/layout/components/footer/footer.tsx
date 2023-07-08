@@ -3,8 +3,6 @@ import Image from "next/image";
 import linkedin from "public/linkedin.svg";
 import whiteGithub from "public/whiteGithub.svg";
 
-//edits here
-
 export const Footer = () => {
   return (
     <footer className="text-gray-600 body-font pb-5 pt-8 lg:pt-10">

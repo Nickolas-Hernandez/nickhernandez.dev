@@ -7,11 +7,11 @@ export const Header = () => {
   const [menuStatus, setMenuStatus] = useState(false);
 
   const toggleMenu = () => {
-    const body = document.querySelector('body');
+    const $html = document.querySelector('html');
     if(menuStatus === true) {
-      body?.classList.remove('overflow-hidden');
+      $html?.classList.remove('overflow-hidden');
     } else {
-      body?.classList.add('overflow-hidden');
+      $html?.classList.add('overflow-hidden');
     }
     setMenuStatus(!menuStatus);
   }
