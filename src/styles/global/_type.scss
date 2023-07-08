@@ -1,9 +1,11 @@
 html {
   scroll-behavior: smooth !important;
+
+  overflow-x: hidden;
 }
 
 body {
-  @apply bg-primary font-body text-white text-base lg:text-lg;
+  @apply bg-primary font-body text-white text-base lg:text-lg relative;
 
   overflow-x: hidden;
 

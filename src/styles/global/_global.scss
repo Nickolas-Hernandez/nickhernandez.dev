@@ -40,7 +40,7 @@ button[type='submit'] {
 .gradient-1,
 .gradient-2,
 .gradient-3 {
-  @apply fixed;
+  @apply absolute;
 
   z-index: -1;
 }

@@ -3,7 +3,7 @@ import { ClonerCube } from "../clonerCube";
 
 export const IntroSection = () => {
   return (
-    <section className="intro-section">
+    <section className="intro-section relative">
       <div className="contain relative">
         <div className="wrapper">
           <p className="text-xl opacity-75">Hi, my name is</p>
@@ -18,6 +18,9 @@ export const IntroSection = () => {
           <div className="overlay"></div>
         </div>
       </div>
+      <div className="gradient-1"></div>
+      <div className="gradient-2"></div>
+      {/* <div className="gradient-3"></div> */}
     </section>
 
   );

@@ -15,9 +15,6 @@ export const Layout = ({ children }: Props) => {
         {children}
       </main>
       <Footer/>
-      <div className="gradient-1"></div>
-      <div className="gradient-2"></div>
-      <div className="gradient-3"></div>
     </>
   )
 }
