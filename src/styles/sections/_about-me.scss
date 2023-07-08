@@ -27,7 +27,9 @@
     }
 
     .wrapper {
-      min-width: 420px;
+      @media screen and (min-width: 1024px) {
+        min-width: 420px;
+      }
 
       .education {
         .education-item {
