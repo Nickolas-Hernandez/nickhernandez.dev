@@ -9,9 +9,9 @@ export const Header = () => {
   const toggleMenu = () => {
     const $html = document.querySelector('html');
     if(menuStatus === true) {
-      $html?.classList.remove('overflow-hidden');
+      $html?.classList.remove('overflow-hidden-mbl');
     } else {
-      $html?.classList.add('overflow-hidden');
+      $html?.classList.add('overflow-hidden-mbl');
     }
     setMenuStatus(!menuStatus);
   }
@@ -20,10 +20,18 @@ export const Header = () => {
     <header>
       <div className="contain">
         <Image className="logoImage" src={logo} alt="Nick Hernandez Logo" />
-        <nav className={menuStatus ? 'open' : ''}>
+        <nav className="hidden lg:inherit">
           <ul className="main-nav">
             <li><Link href="#about-me">About</Link></li>
             <li><Link href="#projects">Projects</Link></li>
+            <li><Link href="https://github.com/Nickolas-Hernandez" target="_blank">GitHub</Link></li>
+          </ul>
+          <Link href="mailto:contact@nickhernandez.dev" className="lg:hidden"><button className="style-3">Contact</button></Link>
+        </nav>
+        <nav className={menuStatus ? 'open mbl-nav' : 'mbl-nav'}>
+          <ul className="main-nav">
+            <li><Link href="#about-me" onClick={toggleMenu}>About</Link></li>
+            <li><Link href="#projects" onClick={toggleMenu}>Projects</Link></li>
             <li><Link href="https://github.com/Nickolas-Hernandez" target="_blank">GitHub</Link></li>
           </ul>
           <Link href="mailto:contact@nickhernandez.dev" className="lg:hidden"><button className="style-3">Contact</button></Link>

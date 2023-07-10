@@ -14,6 +14,10 @@ header {
       }
     }
 
+    nav.mbl-nav {
+      @apply lg:hidden;
+    }
+
     nav {
       @apply w-full bg-primary absolute top-0 bottom-0 -right-full flex flex-col text-center pb-28 pt-16 lg:static lg:bg-transparent lg:h-auto lg:w-auto lg:flex-row lg:py-0;
 
@@ -61,7 +65,7 @@ header {
 
       &.open {
         .line-top {
-          transform: translateY(250%) rotate(45deg);
+          transform: translateY(200%) rotate(45deg);
         }
 
         .line-center {
@@ -69,7 +73,7 @@ header {
         }
 
         .line-bottom {
-          transform: translateY(-250%) rotate(-45deg);
+          transform: translateY(-200%) rotate(-45deg);
         }
       }
     }
