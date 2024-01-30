@@ -21,7 +21,4 @@ export const projectData: project[ ] = [
     live: 'https://github.com/Nickolas-Hernandez/go-quiz',
     github: 'https://github.com/Nickolas-Hernandez/go-quiz'
   },
-  {
-
-  }
 ];
