@@ -9,6 +9,7 @@ import nextjs from 'public/next-js.svg';
 import css from 'public/css.svg';
 import material from 'public/material-ui.svg';
 import typescript from 'public/typescript.svg';
+import go from 'public/golang.svg'
 
 export const iconsData: icons = {
   js: {
@@ -51,4 +52,8 @@ export const iconsData: icons = {
     title: 'TypeScript',
     icon: typescript,
   },
+  go: {
+    title: 'Go',
+    icon: go
+  }
 };
