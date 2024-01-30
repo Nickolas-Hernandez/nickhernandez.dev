@@ -58,63 +58,69 @@ const Icon = ( { tag }: {tag: string} ) => {
     case 'JavaScript':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.js.icon} alt="JavaScript Icon" width={20} height={20} />
+          <Image src={iconsData.js.icon} alt="JavaScript" width={20} height={20} />
         </div>
       );
     case 'PHP':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.php.icon} alt="PHP Icon" width={20} height={20} />
+          <Image src={iconsData.php.icon} alt="PHP" width={20} height={20} />
         </div>
       );
     case 'Python':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.python.icon} alt="Python Icon" width={20} height={20} />
+          <Image src={iconsData.python.icon} alt="Python" width={20} height={20} />
         </div>
       );
     case 'WordPress':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.wordpress.icon} alt="WordPress Icon" width={20} height={20} />
+          <Image src={iconsData.wordpress.icon} alt="WordPress" width={20} height={20} />
         </div>
       );
     case 'React':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.react.icon} alt="React.js Icon" width={20} height={20} />
+          <Image src={iconsData.react.icon} alt="React.js" width={20} height={20} />
         </div>
       );
     case 'Next.js':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.nextjs.icon} alt="Next.js Icon" width={20} height={20} />
+          <Image src={iconsData.nextjs.icon} alt="Next.js" width={20} height={20} />
         </div>
       );
     case 'TypeScript':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.typescript.icon} alt="TypeScript Icon" width={20} height={20} />
+          <Image src={iconsData.typescript.icon} alt="TypeScript" width={20} height={20} />
         </div>
       );
     case 'Tailwind':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.tailwind.icon} alt="Tailwind Icon" width={20} height={20} />
+          <Image src={iconsData.tailwind.icon} alt="Tailwind" width={20} height={20} />
         </div>
       );
     case 'Sass':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.sass.icon} alt="Sass Icon" width={20} height={20} />
+          <Image src={iconsData.sass.icon} alt="Sass" width={20} height={20} />
         </div>
       );
     case 'CSS':
       return (
         <div className="tech-icon">
-          <Image src={iconsData.css.icon} alt="CSS Icon" width={20} height={20} />
+          <Image src={iconsData.css.icon} alt="CSS" width={20} height={20} />
         </div>
       );
+      case 'Go':
+        return (
+          <div className="tech-icon">
+            <Image src={iconsData.go.icon} alt="Go Programming" width={20} height={20} />
+          </div>
+        );
     default:
       return null;
   };
